@@ -71,4 +71,41 @@ function pow3(x:number,y:number) : string {
 
 //Arrays
 
-const arr = []
+const arr = [] 
+
+arr.push()
+arr.push(23)
+arr.push('push')
+
+//array with types
+
+const arr1 : Number[] = []
+
+arr1.push(23)
+arr1.push('string') //can't push a string on a number array
+
+//array of object
+
+const objectarray: employee[] = [] //array of employee object we created above
+
+//tuple array
+
+type List = [number, string, boolean] //fixed length array which every array has it's own type ()
+
+const arr2: List = [] //error because this array should be defined upfront
+
+type List2 = [number?, string?, boolean?] // you can make an array optional by putting a question mark
+
+// Generics
+
+class Observable<T>{
+    constructor(public value: T){}
+
+}
+
+let obs : Observable<employee>;
+
+let obs1 : Observable<number>;
+
+let obs2 : new Observable(23)
+
