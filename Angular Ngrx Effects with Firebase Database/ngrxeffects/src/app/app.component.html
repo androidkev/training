@@ -1,0 +1,16 @@
+<div *ngIf="post$ | async as post">
+
+
+  <h2>{{post.text}}</h2>
+  <h4>Votes: {{ post.votes }}</h4>
+
+  <button (click)="vote(post, 1)">UPVOTE</button>
+  <button (click)="vote(post, -1)">DOWNVOTE</button>
+
+
+</div>
+
+
+<button (click)="getPost()" class="button is-info">
+  Load Post from Firebase
+</button>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-basic-6fe96": {
+      "hosting": {
+        "ngrxeffects": [
+          "fir-basic-6fe96"
+        ]
+      }
+    }
+  }
+}
