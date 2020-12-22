@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-basic-6fe96": {
+      "hosting": {
+        "ngrx-pizza": [
+          "fir-basic-6fe96"
+        ]
+      }
+    }
+  }
+}
