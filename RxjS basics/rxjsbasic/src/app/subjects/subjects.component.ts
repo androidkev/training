@@ -28,11 +28,17 @@ export class SubjectsComponent implements OnInit {
 
     this.subj.next('KEVYN CASTRO')
 
+
     this.behsubj.subscribe((x) => {
       this.bs1 = x
     })
 
     this.behsubj.next('KEVYN2')
+
+    this.behsubj.next('KEVYN3')
+
+    this.behsubj.next('KEVYN4')
+
 
     this.behsubj.subscribe((x) => {
       this.bs2 = x

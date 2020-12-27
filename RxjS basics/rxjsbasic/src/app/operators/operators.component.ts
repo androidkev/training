@@ -22,13 +22,8 @@ export class OperatorsComponent implements OnInit {
   // TAP
 
   tap1 = this.source1.pipe(
-    tap(x => console.log('TAP: ', x)),
-    map( v => v.toUpperCase() ),
-    tap( y => console.log('MAP AND TAP', y)),
-    map( v => 'KEVYN JOHN CASTRO'),
-    tap(async v  => {
-      await Promise.resolve(console.log(v));
-    })
+    map( v => console.log(v.toUpperCase()) ),
+    tap( y => console.log(y)),
   )
 
 

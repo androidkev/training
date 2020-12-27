@@ -1,6 +1,6 @@
 import { ElementRef, ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core'
-import { Observable, of, from, interval, fromEvent } from 'rxjs'
+import { Observable, of, from, fromEvent } from 'rxjs'
 
 
 @Component({
@@ -16,7 +16,8 @@ export class RxjsComponent implements OnInit {
 
   // #1 creating observable
 
-  obs = new Observable((observ) => {
+  obs = new Observable(
+    (observ) => {
 
     observ.next(1)
     observ.next(2)
@@ -46,7 +47,8 @@ export class RxjsComponent implements OnInit {
 
     //subsrive
 
-    const subs = this.obs.subscribe({
+    const subs = this.obs.subscribe(
+      {
       next(pos){
         console.log(pos)
       }
