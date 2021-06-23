@@ -2,9 +2,6 @@
 <html>
   <head>
     <title>Ultimate Courses</title>
-    <script>
-      console.log('Hello World')
-    </script>
   </head>
   <body>
     <header class="header">
@@ -14,5 +11,38 @@
       </div>
     </header>
     <div id="app"></div>
+    <script>
+      // declaration
+      var a, b, c;
+      console.log(a); // output: undefined
+
+      // initialization
+      a = 99;
+      b = 11;
+      c = 55;
+      console.log(a, b, c) // output: 99 11 55
+
+      a = {};
+      b = [];
+      c = '55';
+      console.log(a, b, c) // output: {} [] "55"
+      var d;
+      console.log(d) // output: undefined
+      d = 99
+      console.log(d) // output: 99
+
+      // Block Scoping
+      {
+        var q = 123 // Var is not Block Scope
+      }
+      console.log(q)
+
+      // Let
+      {
+        let x = 123
+        console.log(x) // output: 123
+      }
+      // console.log(x) // output: not defined error
+    </script>
   </body>
-</html>
+  </html>
